@@ -1,0 +1,509 @@
+/* ===== Estilos de la página PSP y TSP ===== */
+
+/* Colores que uso:
+   gris azulado: #4a5b6d
+   azul botones: #2a7cc6
+   verde: #8cc63f
+   naranja: #f7931e
+*/
+
+/* ----- General ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #888888;
+  background-color: white;
+}
+
+a {
+  color: #2a85c9;
+  text-decoration: none;
+}
+
+h2, h3 {
+  color: #555555;
+  font-weight: normal;
+}
+
+/* caja que centra el contenido */
+.contenedor {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* ----- Cabecera ----- */
+.cabecera {
+  background-color: #4a5b6d;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.logo {
+  font-family: "Yellowtail", cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li a {
+  color: white;
+  padding: 5px 16px;
+  margin-left: 5px;
+  border-radius: 15px;
+  display: block;
+}
+
+.menu li a:hover {
+  background-color: #3c4c5d;
+}
+
+.activo {
+  background-color: #3c4c5d;
+}
+
+/* parte de abajo de la cabecera: celular + texto */
+.cabecera-contenido {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.celular {
+  width: 380px;
+  height: 430px;
+  background-color: #111111;
+  border-radius: 45px 45px 0 0;
+  padding: 60px 22px 0 22px;
+  margin-right: 60px;
+}
+
+.pantalla {
+  height: 100%;
+  background-color: #4a4c4e;
+  padding: 25px 20px;
+  color: white;
+}
+
+.pantalla h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.pantalla p {
+  background-color: #6a6c6e;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.cabecera-texto {
+  width: 480px;
+}
+
+.cabecera-texto h1 {
+  font-size: 46px;
+  margin-bottom: 18px;
+}
+
+.cabecera-texto .destacado {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.cabecera-texto .claro {
+  color: #a9b4c0;
+  margin-bottom: 40px;
+}
+
+.o {
+  margin: 0 12px;
+}
+
+.enlace-blanco {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/* ----- Botones ----- */
+.boton {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 11px 44px;
+  border-radius: 20px;
+  background-color: #2a7cc6;
+  border: 1px solid #2a73b8;
+}
+
+.boton:hover {
+  background-color: #3a8cd6;
+}
+
+.boton-chico {
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-size: 13px;
+}
+
+/* ----- Franja gris ----- */
+.franja {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #d5d5d5;
+  height: 76px;
+}
+
+.franja .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+}
+
+.franja span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #b9b9b9;
+}
+
+/* ----- Tres columnas con círculos ----- */
+.tres-columnas {
+  padding: 80px 0 60px 0;
+}
+
+.tres-columnas .contenedor {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.columna {
+  width: 300px;
+}
+
+.circulo {
+  width: 134px;
+  height: 134px;
+  border: 4px solid #8394a7;
+  border-radius: 50%;
+  margin: 0 auto 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo svg {
+  width: 60px;
+  height: 60px;
+  fill: #7a8da1;
+}
+
+.columna h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.columna p {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+
+/* ----- Secciones ----- */
+.seccion {
+  padding: 50px 0 20px 0;
+}
+
+.seccion h2 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+/* cuadritos de colores que van junto a los títulos */
+.icono-verde, .icono-naranja, .icono-azul {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.icono-verde {
+  border: 3px solid #8cc63f;
+  border-radius: 50%;
+}
+
+.icono-naranja {
+  border: 3px solid #f7931e;
+}
+
+.icono-azul {
+  border: 3px solid #2a9fd8;
+  border-radius: 50%;
+}
+
+/* niveles PSP */
+.niveles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nivel {
+  width: 225px;
+  background-color: white;
+  padding: 3px;
+  box-shadow: 0 1px 4px #aaaaaa;
+}
+
+.nivel-imagen {
+  height: 150px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nivel-imagen b {
+  font-size: 22px;
+}
+
+.nivel p {
+  font-size: 13px;
+  padding: 10px 6px;
+}
+
+.color1 { background-color: #3f6b1f; }
+.color2 { background-color: #8cc63f; }
+.color3 { background-color: #2b2b2b; }
+.color4 { background-color: #4a4a4a; }
+
+/* roles TSP */
+.roles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rol {
+  width: 182px;
+  background-color: #fafafa;
+  border: 1px solid #e3e3e3;
+  border-top: 3px solid #7a8da1;
+  padding: 15px;
+  text-align: center;
+}
+
+.rol h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #4a5b6d;
+  margin-bottom: 6px;
+}
+
+.rol p {
+  font-size: 13px;
+}
+
+/* fases TSP */
+.fases {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fase {
+  width: 300px;
+  display: flex;
+}
+
+.numero {
+  width: 55px;
+  height: 55px;
+  border: 3px solid #8394a7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 49px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7a8da1;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+.fase h3 {
+  font-size: 17px;
+}
+
+.fase p {
+  font-size: 13px;
+}
+
+/* ventajas y desventajas */
+.dos-columnas {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 20px 0;
+}
+
+.mitad {
+  width: 460px;
+}
+
+.mitad h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.mitad h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #4a5b6d;
+  margin: 12px 0 4px 0;
+}
+
+.mitad ul {
+  margin-left: 20px;
+}
+
+.mitad li {
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.mala {
+  color: #c77a1d;
+}
+
+/* tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 1px 4px #aaaaaa;
+}
+
+th {
+  background-color: #4a5b6d;
+  color: white;
+  text-align: left;
+  padding: 10px 14px;
+}
+
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.precio {
+  color: #2a85c9;
+  font-weight: bold;
+}
+
+.subtitulo-tabla {
+  margin-top: 40px;
+}
+
+/* perfiles */
+.perfiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  width: 225px;
+  font-size: 13px;
+  border-left: 3px solid #8cc63f;
+  padding-left: 12px;
+}
+
+.perfil b {
+  display: block;
+  color: #555555;
+  font-size: 14px;
+}
+
+/* ----- Pie de página ----- */
+.pie {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 60px;
+  padding: 22px 0 40px 0;
+  font-size: 13px;
+}
+
+.pie .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.rojo-azul { background-color: #3b5998; }
+.celeste { background-color: #2a9fd8; }
+.azul-oscuro { background-color: #1a7bb9; }
+
+/* ----- Para pantallas pequeñas (celular) ----- */
+@media (max-width: 1000px) {
+  .contenedor {
+    width: 90%;
+  }
+
+  .celular {
+    display: none;
+  }
+
+  .cabecera-contenido,
+  .tres-columnas .contenedor,
+  .niveles,
+  .roles,
+  .fases,
+  .dos-columnas,
+  .perfiles,
+  .menu {
+    flex-direction: column;
+  }
+
+  .cabecera-texto,
+  .columna,
+  .nivel,
+  .rol,
+  .fase,
+  .mitad,
+  .perfil {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .franja {
+    height: auto;
+  }
+
+  .franja span {
+    font-size: 18px;
+  }
+}
